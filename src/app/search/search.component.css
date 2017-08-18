@@ -1,0 +1,31 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.searchPanel {
+  padding: 0.7em;
+}
+
+.suggestions {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.search-items {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.search-item-name {
+  margin-left: 150px;
+}
+
+.search-item-category {
+  padding-left: 5px;
+  float: left;
+}

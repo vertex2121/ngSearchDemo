@@ -1,0 +1,13 @@
+<div class="center">
+  <div>
+    <input id="search" class="searchPanel" size="100" type="text" required="true" placeholder="Поиск товара" [(ngModel)]="query" (keyup)="search()" />
+  </div>
+  <div class="suggestions" *ngIf="filteredList.length > 0">
+    <div *ngFor="let item of filteredList">
+      <a class="search-items" href="item.id" (click)="select(item)">
+        <div class="search-item-category"> {{item.category}}</div>
+        <div class="search-item-name"> {{item.name}}</div>
+      </a>
+    </div>
+  </div>
+</div>
