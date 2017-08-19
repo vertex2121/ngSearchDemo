@@ -5,8 +5,7 @@ import { Item } from '../search/item';
 
 @Component({
   selector: 'app-result',
-  templateUrl: './result.component.html',
-  styleUrls: ['./result.component.css']
+  templateUrl: './result.component.html'
 })
 export class ResultComponent implements OnInit {
 
