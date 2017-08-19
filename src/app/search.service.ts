@@ -7,7 +7,13 @@ export class SearchService {
 
   getSearchResults(query: string): Promise<Item[]> {
     return new Promise(resolve => {
-      setTimeout(() => resolve(RESULTS), 2000);
+      setTimeout(() => resolve(RESULTS), 500);
+    });
+  }
+
+  getItem(itemId: number): Promise<Item> {
+    return new Promise(resolve => {
+      setTimeout(() => resolve(RESULTS.find(item => item.id === itemId)), 1000);
     });
   }
 
